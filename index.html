@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Cheat sheet</title>
+  </head>
+  <body>
+    <!-- headings -->
+    <h1>This is main heading</h1>
+    <h2>This is the secondary heading</h2>
+    <br />
+    <h3>>This is the third heading</h3>
+    <br />
+    <!-- paragraph -->
+    <p>
+      Hello, <strong>this is paragraph</strong>. I don't know what to write here
+      but hope you enjoy it. Here is <a href="about.html">about</a> section. You
+      can jump to google
+      <a href="https://www.google.com" target="_blank">here</a>.
+    </p>
+    <!-- lists -->
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+    <ol>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+
+    <!-- table -->
+    <div style="margin-top: 50px"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Echo Yin</th>
+          <th>echo_ybl@hotmail.com</th>
+          <th>33</th>
+        </tr>
+        <tr>
+          <th>Jon Gill</th>
+          <th>jgil@gmail.com</th>
+          <th>35</th>
+        </tr>
+        <tr>
+          <th>JJ</th>
+          <th>juamontee@gmail.com</th>
+          <th>50</th>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <div style="margin-top: 50px"></div>
+    <hr />
+    <!-- forms -->
+    <form action="process.php" , method="POST">
+      <div>
+        <label>First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="your first name here"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName" placeholder="your last name here" />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="your email here" />
+      </div>
+      <br />
+      <div>
+        <label>Message</label>
+        <textarea
+          name="message"
+          placeholder="what message do you want to leave with me?"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="female">Other</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Age</label>
+        <input type="number" name="age" value="30 " />
+      </div>
+      <br />
+      <div>
+        <label>Birthday</label>
+        <input type="date" name="birthday" />
+      </div>
+      <br />
+      <div>
+        <label>Current Time</label>
+        <input type="datetime" name="birthday" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="submit" />
+    </form>
+    <!-- button -->
+    <br>
+    <button>Click Me</button>
+    <!-- image -->
+    <br>
+    <a href="img/fun-image.jpg" target="_blank">
+        <img src="img/fun-image.jpg" alt="My sample image" width="200">
+    </a>
+    <!-- Quotations -->
+    <blockquote cite="about.html">
+        This is block quote element. The cite here you cannot see.
+    </blockquote>
+    <p> Hover on <abbr title="abbreviation">abbr</abbr> for what it stands for.</p>
+    <p><cite>That wraps up this course</cite> But there are more to learn and practice, keep going.</p>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "html-css-js-exercise",
+  "version": "1.0.0",
+  "description": "web frontend excercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-choness/html-css-js-exercise.git"
+  },
+  "keywords": [
+    "learning"
+  ],
+  "author": "Echo Yin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e-choness/html-css-js-exercise/issues"
+  },
+  "homepage": "https://github.com/e-choness/html-css-js-exercise#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
