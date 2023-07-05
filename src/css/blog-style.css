@@ -1,0 +1,92 @@
+body{
+    background-color: #dee2e3;
+    color: #443f54;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a{
+    color: #232b35;
+    text-decoration: none;
+    font-size: 18px;
+    padding: right 15px;
+}
+
+a:hover{
+    color: #d9ba9d;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #796c60;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: #443f54;
+    color: #dee2e3;
+    padding: 10px;
+}
+
+#main-footer{
+    background-color: #232b35;
+    color: #9b9bac;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#nav-bar{
+    background-color: #d6823a;
+    color: #6c697c;
+}
+
+#nav-bar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#nav-bar li{
+    display: inline;
+}
+
+#showcase{
+    background-image: url('../img/light-simple-background.jpg');
+    background-position: top center;
+    min-height: 250px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#main{
+    float:left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #242c37;
+    color: #dee2e3;
+}
+
+@media(max-width: 600px){
+    #main, #side-bar{
+        width: 100%;
+        float:none;
+    }
+}
