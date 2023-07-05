@@ -7,9 +7,9 @@ A little excercise to build a static website.
 ## Learning Content
 
 * [x] HTML: Elements, Attributes, Colors, Formating, Headings, Paragraphs, Images, Links, Quataitions, Comments, Tables, Lists, Classes, Blocks and Inlines.
-* [x] CSS: text-alignment,background, color, fonts, padding, margin, spacing, border, box sizing, positioning and floating.
+* [x] CSS: Text-alignment,Background, Color, Fonts, Padding, Margin, Spacing, Border, Box sizing, Positioning and Floating.
 * [ ] JavaScript
 
 ## One Page Example
 
-![iamge](screenshot\screenshot1.png)
+![iamge](https://github.com/e-choness/html-css-js-exercise/blob/6bc5b11c2e3e4c4b760386428e9c37f65c814567/screenshot/screenshot1.png?raw=true)
