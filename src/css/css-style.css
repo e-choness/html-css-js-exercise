@@ -1,116 +1,139 @@
-#main-header{
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #43304c;
-    color: #e1b998;
-    padding: 10px;
-    width: auto;
-    margin:auto;
+#main-header {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #43304c;
+  color: #e1b998;
+  padding: 10px;
+  width: auto;
+  margin: auto;
 }
 
-#main-footer{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #595b65;
-    color: #c7d3af;
-    padding: auto;
-    width: auto;
-    margin:auto;
+#main-footer {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #595b65;
+  color: #c7d3af;
+  padding: auto;
+  width: auto;
+  margin: auto;
 }
 
-a{
-    text-decoration:wavy;
-    color: #595b65;
+a {
+  text-decoration: wavy;
+  color: #595b65;
 }
 
-a:hover{
-    text-decoration: underline;
-    color: #a89283;
+a:visited {
+  color: #91a250;
 }
 
-a:visited{
-    color: #91a250;
+a:hover {
+  text-decoration: underline;
+  color: #a89283;
 }
 
-body{
-    background-color: #d3dab9;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.6em;
-    border:inset #595b65;
+body {
+  background-color: #d3dab9;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.6em;
+  border: inset #595b65;
 }
 
-.button{
-    background-color: #43304c;
-    color: #c7d3af;
-    padding: 10px, 15px;
-    border: none;
-    border-radius: 5px;
+.clr {
+  clear: both;
 }
 
-.button:hover{
-    background-color: #a89283;
-    color:#43304c;
+.button {
+  background-color: #43304c;
+  color: #c7d3af;
+  padding: 10px, 15px;
+  border: none;
+  border-radius: 5px;
 }
 
-.box-1, .post{
-    font-family: cursive;
-    text-align: left;
-    color: #595b65;
-    width: 80%;
-    margin:auto;
-    border: dotted #595b65;
-    border-radius: 5px;
+.button:hover {
+  background-color: #a89283;
+  color: #43304c;
 }
 
-.post h3{
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0.1em;
-    word-spacing: 0.5em;
+.box-1 {
+  font-family: cursive;
+  text-align: center;
+  color: #595b65;
+  width: 80%;
+  margin: auto;
+  border: dotted #595b65;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.post small{
-    font-style: italic;
+.post {
+  font-family: cursive;
+  text-align: left;
+  color: #595b65;
+  width: 80%;
+  margin: auto;
+  border: dotted #595b65;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.categories                                                                                                                         {
-    border: groove #595b65;
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
+.post h3 {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.1em;
+  word-spacing: 0.5em;
 }
 
-.categories h3{
-    text-align: center;
+.post small {
+  font-style: italic;
 }
 
-.categories li{
-    padding: 5px;
-    list-style-image: url('../img/bullet-points-small.png');
+.categories {
+  border: groove #595b65;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-image: url("../img/light-background.webp");
+  background-position: center center;
 }
 
-.my-form{
-    padding: 20px;
+.categories h3 {
+  text-align: center;
 }
 
-.form-group{
-    padding-bottom: 5px;
+.categories li {
+  padding: 5px;
+  list-style-image: url("../img/bullet-points-small.png");
 }
 
-.my-form label{
-    display: block;
+.categories li:nth-child(odd) {
+  background-color: #c7d3af;
 }
 
-.my-form input[type="text"], .my-form input[type="email"], .my-form textarea{
-    padding: 8px;
-    width: 90%;
+.my-form {
+  padding: 20px;
 }
 
-#user-info{
-    float:inherit;
-    width: 45%;
+.form-group {
+  padding-bottom: 5px;
 }
 
-#user-message{
-    float:initial;
-    width: 45%;
+.my-form label {
+  display: block;
+}
+
+.my-form input {
+  padding: 8px;
+  width: 90%;
+}
+
+#user-info,
+#user-extra {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
 }
