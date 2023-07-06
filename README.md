@@ -1,4 +1,4 @@
-# Learning html css and javascript real quick
+# Learning HTML, CSS and Javascript Real Quick
 
 A little excercise to build a static website.
 
