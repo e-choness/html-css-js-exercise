@@ -15,11 +15,6 @@ A little excercise to build a static website.
 
 ## One Page Example
 
-- CSS Style Example
-  ![css-example](https://github.com/e-choness/html-css-js-exercise/blob/main/screenshot/screenshot1.png?raw=true)
-
-- Javascript Events Example
-  ![javascript-example](https://github.com/e-choness/html-css-js-exercise/blob/main/screenshot/screenshot2.png?raw=true)
-
-- Bootstrap Site Example
-- ![bootstrap-example](https://github.com/e-choness/html-css-js-exercise/blob/main/screenshot/screenshot3.png?raw=true)
+| **CSS Style Example**  | **Javascript Events Example**  | **Bootstrap Site Example** |
+|:---:|:---:|:---:|
+| ![css-example](https://github.com/e-choness/html-css-js-exercise/blob/main/screenshot/screenshot1.png?raw=true) | ![javascript-example](https://github.com/e-choness/html-css-js-exercise/blob/main/screenshot/screenshot2.png?raw=true) | ![bootstrap-example](https://github.com/e-choness/html-css-js-exercise/blob/main/screenshot/screenshot3.png?raw=true) |
