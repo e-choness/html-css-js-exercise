@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Bootstrap Crash Learning</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"> Pixel Haven </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">PROFILE</a>
+            </li>
+            <li class="nav-item">
+              <a href="#learn-more" class="nav-link">LEARN MORE</a>
+            </li>
+            <li class="nav-item">
+              <a href="#qanda" class="nav-link">Q&A</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#contact" class="nav-link">CONTACT</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- showcase -->
+    <section
+      id="home"
+      class="bg-dark text-light p-5 text-center text-sm-center mt-5"
+    >
+      <div class="container">
+        <div class="d-sm-flex gap-5">
+          <div>
+            <h1>A Gamer's <span class="text-white-50">Retreat</span></h1>
+            <p class="lead my-4">
+              In the realm of gaming, the gamer-turned-developer wields their
+              passion to create immersive experiences. From playing to crafting,
+              they bring dreams to life, shaping worlds for others to explore
+              and enjoy.
+            </p>
+            <button class="btn btn-primary btn-lg mb-3">
+              Explore the Galaxy!
+            </button>
+          </div>
+          <img
+            class="img-fluid img-thumbnail w-50 d-none d-md-block"
+            src="image/pixel37.webp"
+            alt="This is my journey."
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center g-3">
+          <h3 class="mb-3 mb-md-0">Sign Up for the Galaxy News Network!</h3>
+          <div class="input-group mb-3" id="email-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your email here"
+            />
+            <button class="btn btn-dark btn-lg" type="button">Button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boxes -->
+    <section class="p-5" id="profile">
+      <div class="container">
+        <div class="row text-center g-3">
+          <div class="col-md">
+            <div class="card bg-dark text-light p-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi-xbox"></i>
+                </div>
+              </div>
+              <h3 class="card-title">Xbox Adventure</h3>
+              <div class="card-text">
+                <p>
+                  Embark on epic cosmic adventures as an Xbox player and
+                  traverse the boundless wonders of the galaxy, encountering
+                  alien civilizations, battling space pirates, and discovering
+                  uncharted worlds.
+                </p>
+                <a
+                  href="https://account.xbox.com/en-US/Profile?gamerTag=Echo%2BYin"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light p-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi-steam"></i>
+                </div>
+              </div>
+              <h3 class="card-title">Steam Summer</h3>
+              <div class="card-text">
+                <p>
+                  Unleash your gaming prowess as a PC player and dive into the
+                  sizzling Steam Summer Sale, where a treasure trove of
+                  discounted games awaits. Embark on virtual journeys and create
+                  unforgettable memories.
+                </p>
+                <a
+                  href="https://steamcommunity.com/id/echochaos/"
+                  class="btn btn-dark"
+                  target="_blank"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi-linkedin"></i>
+                </div>
+              </div>
+              <h3 class="card-title">Future Career</h3>
+              <div class="card-text">
+                <p>
+                  Balancing the quest for the perfect job and the allure of
+                  gaming, the job seeker and gamer navigates dual realms with
+                  determination. By day, seeking professional success; by night,
+                  conquering virtual worlds.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/echoyin0451/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- learn sections -->
+    <section id="learn-more" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="image/pixel39.png"
+              alt="Space Gamer"
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-md p-5">
+            <h2 class="text-md-center">Go Beyond Boundary</h2>
+            <p class="lead">
+              Undeterred by challenges and setbacks, the resilient gamer forges
+              ahead, driven by a relentless spirit. With unwavering
+              determination, they face obstacles head-on, learning, adapting,
+              and ultimately conquering their virtual quests.
+            </p>
+            <p>
+              An insatiable thirst for knowledge fuels the developer's journey.
+              Constantly exploring new technologies, methodologies, and best
+              practices, they embrace the ever-evolving world of development,
+              never ceasing to learn and grow.
+            </p>
+            <a
+              href="https://medium.com/@echoness"
+              class="btn btn-light mt-3"
+              target="_blank"
+            >
+              <i class="bi bi-joystick"></i>
+              READ MORE
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- learn sections -->
+    <section id="learn-more" class="p-5 bg-dark text-bg-dark">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5 float-md-start">
+            <h2 class="text-md-center">Explore Inner Self</h2>
+            <p class="lead">
+              Undeterred by challenges and setbacks, the resilient gamer forges
+              ahead, driven by a relentless spirit. With unwavering
+              determination, they face obstacles head-on, learning, adapting,
+              and ultimately conquering their virtual quests.
+            </p>
+            <p>
+              An insatiable thirst for knowledge fuels the developer's journey.
+              Constantly exploring new technologies, methodologies, and best
+              practices, they embrace the ever-evolving world of development,
+              never ceasing to learn and grow.
+            </p>
+            <a
+              href="https://www.gcores.com/users/15758/talks"
+              class="btn btn-light mt-3"
+              target="_blank"
+            >
+              <i class="bi bi-controller"></i>
+              READ MORE
+            </a>
+          </div>
+          <div class="col-md float-md-end">
+            <img
+              src="image/pixel26.png"
+              alt="Space Gamer"
+              class="img-fluid img-thumbnail w-75"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- question accordian -->
+    <section id="qanda" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Q&A</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <h3 class="lead">
+                  What inspired you to become a game developer?
+                </h3>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                I became inspired to become a game developer due to my love for
+                video games. Growing up, I spent countless hours playing games
+                and being immersed in their worlds. The idea of being able to
+                create my own interactive experiences and share them with others
+                was incredibly appealing. I wanted to be a part of the process
+                of crafting memorable and enjoyable experiences for players.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <h3 class="lead">
+                  What are your favorite game genres, and why?
+                </h3>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p class="lead">My favorite game genres include:</p>
+                <ul>
+                  <li>
+                    <strong>Role-playing games (RPGs)</strong> <br />
+                    I enjoy the deep narratives, character development, and
+                    immersive worlds that RPGs offer. The ability to shape the
+                    story and explore vast and detailed environments is
+                    particularly captivating.
+                  </li>
+                  <li>
+                    <strong>Action-adventure games</strong> <br />
+                    This genre combines elements of exploration, puzzle-solving,
+                    and combat. I appreciate the balance between engaging
+                    gameplay mechanics and compelling storytelling found in many
+                    action-adventure games.
+                  </li>
+                  <li>
+                    <strong>Puzzle games</strong> <br />
+                    I find puzzle games to be mentally stimulating and
+                    satisfying. Solving challenging puzzles or unraveling
+                    intricate mysteries can be a rewarding experience.
+                  </li>
+                  <li>
+                    <strong>Strategy games</strong> <br />
+                    The strategic thinking and planning required in strategy
+                    games appeal to me. I enjoy the challenge of managing
+                    resources, making tactical decisions, and outsmarting
+                    opponents.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <h3 class="lead">
+                  Can you recommend any underrated or lesser-known games that
+                  you think more people should play?
+                </h3>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p class="lead">
+                  Here are some underrated or lesser-known games that I believe
+                  more people should play:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Undertale</strong> <br />
+                    This indie RPG combines innovative gameplay mechanics, a
+                    unique story, and memorable characters. It challenges
+                    traditional RPG conventions and offers players multiple
+                    paths and endings based on their choices.
+                  </li>
+                  <li>
+                    <strong>Inside</strong> <br />
+                    This atmospheric puzzle-platformer delivers a haunting and
+                    thought-provoking experience. Its minimalist storytelling,
+                    beautiful art style, and clever puzzles create an engaging
+                    and mysterious world.
+                  </li>
+                  <li>
+                    <strong>Hades</strong> <br />
+                    This roguelike action RPG offers fast-paced combat, dynamic
+                    storytelling, and a captivating blend of Greek mythology and
+                    character-driven narratives. Its addictive gameplay loop and
+                    rewarding progression system make it highly enjoyable.
+                  </li>
+                  <li>
+                    <strong>Ori and the Blind Forest</strong> <br />
+                    A visually stunning metroidvania-style game with a heartfelt
+                    story, beautiful music, and challenging platforming. It
+                    provides a compelling emotional journey and a sense of
+                    wonder as players explore its enchanting world.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Echo Yin</p>
+        <a href="#" class="position-abusolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-square h1"></i>
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
