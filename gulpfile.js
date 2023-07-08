@@ -1,9 +1,11 @@
-const gulp = require('gulp');
-// const imagemin = require('gulp-imagemin');
-// import gulp from 'gulp'
-// import imagemin from 'gulp-imagemin';
-const uglify = require('gulp-uglify');
-const sass = require('gulp-sass')(require('sass'));
+const { parallel } = require("gulp");
+const { src, dest } = require("gulp");
+const uglify = require("gulp-uglify");
+const sass = require("gulp-sass")(require("sass"));
+const concat = require("gulp-concat");
+const rename = require("gulp-rename");
+const babel = require("gulp-babel");
+const sourcemaps = require("gulp-sourcemaps");
 
 /*
     -- TOP LEVEL FUNCTIONS --
@@ -13,35 +15,63 @@ const sass = require('gulp-sass')(require('sass'));
     gulp.watch -- Watch files and folders for changes
 */
 
-gulp.task('message', async function () {
-  return console.log('Gulp is running...')
-});
+let path = {
+  src: {
+    html: "src/*.html",
+    htminc: "src/**/*.htm",
+    js: "src/js/*.js",
+    css: "src/css/*.css",
+    scss: "src/sass/*.scss",
+    images: "src/img/**/*.+(png|jpg|jpeg|svg)",
+    others: "src/**/*.+(php|ico|png)",
+    vendor: "src/vendor/**/*.js",
+  },
+  build: {
+    dirBuild: "production/",
+    dirDev: "development/",
+  },
+  comments: "WEBSITE: medium.com/@echoness",
+};
 
-// Copy all HTML files to dist folder
-gulp.task('copyHTML', async function () {
-  gulp.src('src/*.html').pipe(gulp.dest('dist'));
-});
+async function copyHTML() {
+  return src(path.src.html).pipe(dest(path.build.dirDev));
+}
 
-// Optimize images via imagemin
-// the newest version does not support reqire any more
-// gulp.task('imageMin', async function () {
-//     gulp.src('src/img/*')
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('dist/img'));
-// });
-// export default () => (
-// 	gulp.src('src/images/*')
-// 		.pipe(imagemin())
-// 		.pipe(gulp.dest('dist/images'))
-// );
+// async function transpilation() {
+//   return src(path.src.scss)
+//     .pipe(sass().on("error", sass.logError))
+//     .pipe(dest(path.build.dirDev + "css/"));
+// }
 
-// Minify the javascript files
-gulp.task('minifyJS', async function () {
-  gulp.src('src/js/*.js').pipe(uglify()).pipe(gulp.dest('dist/js'))
-});
+// async function cssConcat() {
+//   return src(path.src.css)
+//     .pipe(concat("style.css"))
+//     .pipe(dest(path.build.dirDev + "css/"));
+// }
 
-gulp.task('sass', async function () {
-    gulp.src('src/sass/*.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest('dist/css'))
-});
+// async function cssConcat() {
+//   return src(path.src.css)
+//     .pipe(concat("style.css"))
+//     .pipe(dest(path.build.dirDev + "css/"));
+// }
 
-gulp.task('default', ['message', 'copyHTML', 'minifyJS', 'sass']);
+async function cssBuild() {
+  return src(path.src.scss)
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+        outputStyle: "expanded",
+    }).on("error", sass.logError)
+    ).pipe()
+}
+
+async function jsBuild() {
+  return src(path.src.js)
+    .pipe(babel())
+    .pipe(src(path.src.vendor))
+    .pipe(dest(path.build.dirDev))
+    .pipe(uglify())
+    .pipe(rename({ extname: ".min.js" }))
+    .pipe(dest(path.build.dirDev));
+}
+
+exports.build = parallel(copyHTML, cssBuild, jsBuild);
