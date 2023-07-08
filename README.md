@@ -8,6 +8,7 @@ A little excercise to build a static website.
 - [x] CSS: Text-alignment,Background, Color, Fonts, Padding, Margin, Spacing, Border, Box sizing, Positioning and Floating.
 - [x] JavaScript: Variables, Properties, Functions, Loops, Mappings, Events, Classes, UI Elements, Arrays.
 - [x] Bootstrap: Navbar, Conatainer, Text alignment, Theme, Bootstrap Icon, image positioning, card components, form elements, accordions and inline transitions.
+- [x] Guip: Compose tasks, Async Completion(Series, Parallel), Custom plugins, Pipeline, Configurations.
 
 ## Third Party Plugins
 

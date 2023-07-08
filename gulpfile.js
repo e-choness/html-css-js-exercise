@@ -1,30 +1,47 @@
-const { series, parallel } = require('gulp');
+const gulp = require('gulp');
+// const imagemin = require('gulp-imagemin');
+// import gulp from 'gulp'
+// import imagemin from 'gulp-imagemin';
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass')(require('sass'));
 
-function clean(cb){
-    cb();
-}
+/*
+    -- TOP LEVEL FUNCTIONS --
+    gulp.task - Define tasks
+    gulp.src - Points to files to use and compile
+    gulp.dest -- Points to folder to output
+    gulp.watch -- Watch files and folders for changes
+*/
 
-function build(cb){
-    cb();
-}
+gulp.task('message', async function () {
+  return console.log('Gulp is running...')
+});
 
-function transpile(cb){
-    cb();
-}
+// Copy all HTML files to dist folder
+gulp.task('copyHTML', async function () {
+  gulp.src('src/*.html').pipe(gulp.dest('dist'));
+});
 
-function bundle(cb){
-    cb();
-}
+// Optimize images via imagemin
+// the newest version does not support reqire any more
+// gulp.task('imageMin', async function () {
+//     gulp.src('src/img/*')
+//     .pipe(imagemin())
+//     .pipe(gulp.dest('dist/img'));
+// });
+// export default () => (
+// 	gulp.src('src/images/*')
+// 		.pipe(imagemin())
+// 		.pipe(gulp.dest('dist/images'))
+// );
 
-function javascript(cb){
-    cb();
-}
+// Minify the javascript files
+gulp.task('minifyJS', async function () {
+  gulp.src('src/js/*.js').pipe(uglify()).pipe(gulp.dest('dist/js'))
+});
 
-function css(cb){
-    cb();
-}
+gulp.task('sass', async function () {
+    gulp.src('src/sass/*.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest('dist/css'))
+});
 
-exports.build = build;
-exports.default = series(clean, build);
-exports.build = series(transpile, bundle);
-exports.build = parallel(javascript,css);
+gulp.task('default', ['message', 'copyHTML', 'minifyJS', 'sass']);

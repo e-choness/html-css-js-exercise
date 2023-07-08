@@ -20,7 +20,12 @@
   },
   "homepage": "https://github.com/e-choness/html-css-js-exercise#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.63.6"
   },
   "dependencies": {
     "bootstrap": "^5.3.0",
