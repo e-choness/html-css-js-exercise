@@ -6,6 +6,8 @@ const concat = require("gulp-concat");
 const rename = require("gulp-rename");
 const babel = require("gulp-babel");
 const sourcemaps = require("gulp-sourcemaps");
+const autoprefixer = require("gulp-autoprefixer");
+const comments = require("gulp-header-comment");
 
 /*
     -- TOP LEVEL FUNCTIONS --
@@ -30,11 +32,16 @@ let path = {
     dirBuild: "production/",
     dirDev: "development/",
   },
+};
+
+let content = {
   comments: "WEBSITE: medium.com/@echoness",
 };
 
 async function copyHTML() {
-  return src(path.src.html).pipe(dest(path.build.dirDev));
+  return src(path.src.html)
+    .pipe(comments(content.comments))
+    .pipe(dest(path.build.dirDev));
 }
 
 // async function transpilation() {
@@ -58,10 +65,15 @@ async function copyHTML() {
 async function cssBuild() {
   return src(path.src.scss)
     .pipe(sourcemaps.init())
-    .pipe(sass({
+    .pipe(
+      sass({
         outputStyle: "expanded",
-    }).on("error", sass.logError)
-    ).pipe()
+      }).on("error", sass.logError)
+    )
+    .pipe(autoprefixer)
+    .pipe(sourcemaps.write("/"))
+    .pipe(comments(content.comments))
+    .pipe(dest(path.build.dirDev));
 }
 
 async function jsBuild() {
