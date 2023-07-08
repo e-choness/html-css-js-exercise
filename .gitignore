@@ -132,6 +132,10 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+#gulp
+development
+production
+
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
