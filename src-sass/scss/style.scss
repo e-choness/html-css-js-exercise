@@ -1,0 +1,53 @@
+@import "variables";
+@import "base";
+@import "theme";
+
+
+.showcase {
+//   background-color: $primary-color;
+//   color: set-text-color($primary-color);
+    @include set-background($primary-color);
+    // @include set-background($light-color);
+  height: 600px;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 15px;
+  }
+
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    h1 {
+      margin: 20px;
+    }
+    p {
+      margin: 15px;
+    }
+    a {
+      padding: auto;
+      margin: 15px;
+    }
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@import "button";
+@import "mobile";
+
+
