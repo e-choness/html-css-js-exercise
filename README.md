@@ -13,16 +13,16 @@ A little excercise to build a static website.
 
 ## Third Party Plugins
 
-[Bootstrap 5.3.0](https://getbootstrap.com/)
-[gulp-uglify 3.0.2](https://www.npmjs.com/package/gulp-uglify)
-[gulp-sass 5.1.0](https://www.npmjs.com/package/gulp-sass)
-[gulp-concat 2.6.1](https://www.npmjs.com/package/gulp-concat)
-[gulp-rename 2.0.0](https://www.npmjs.com/package/gulp-rename)
-[gulp-babel 8.0.0](https://www.npmjs.com/package/gulp-babel)
-[gulp-sourcemaps 3.0.0](https://www.npmjs.com/package/gulp-sourcemaps)
-[gulp-autoprefixer 8.0.0](https://www.npmjs.com/package/gulp-autoprefixer)
-[gulp-comments 1.3.0](https://www.npmjs.com/package/gulp-comments)
-[browser-sync](https://browsersync.io/docs/gulp)
+- [Bootstrap 5.3.0](https://getbootstrap.com/)
+- [gulp-uglify 3.0.2](https://www.npmjs.com/package/gulp-uglify)
+- [gulp-sass 5.1.0](https://www.npmjs.com/package/gulp-sass)
+- [gulp-concat 2.6.1](https://www.npmjs.com/package/gulp-concat)
+- [gulp-rename 2.0.0](https://www.npmjs.com/package/gulp-rename)
+- [gulp-babel 8.0.0](https://www.npmjs.com/package/gulp-babel)
+- [gulp-sourcemaps 3.0.0](https://www.npmjs.com/package/gulp-sourcemaps)
+- [gulp-autoprefixer 8.0.0](https://www.npmjs.com/package/gulp-autoprefixer)
+- [gulp-comments 1.3.0](https://www.npmjs.com/package/gulp-comments)
+- [browser-sync](https://browsersync.io/docs/gulp)
 
 ## One Page Example
 
